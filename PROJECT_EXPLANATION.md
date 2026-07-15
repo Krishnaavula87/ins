@@ -52,13 +52,14 @@ Because of privacy rules, feature names do not explain the real meaning of each 
 
 | File | Purpose |
 |------|---------|
-| `ins_claim_pred.py` | Full project code in one file |
+| `PRCP_1010_InsClaimPred.ipynb` | **Main submission notebook** (recommended) |
+| `ins_claim_pred.py` | Same project logic in one Python file |
 | `requirements.txt` | Python packages needed to run the project |
 | `PROJECT_EXPLANATION.md` | This file — explains the project |
 | `PRCP-1010-InsClaimPred (5).docx` | Original problem statement document |
 | `.gitignore` | Ignores large dataset / temporary files |
 
-Generated when you run the script:
+Generated when you run the script/notebook:
 - `model_comparison_results.csv` — saved model scores
 
 ---
@@ -116,13 +117,21 @@ Prints common problems and how they were handled:
 
 ## 6. How to run the project
 
+### Option A — Jupyter notebook (recommended for submission)
+```bash
+pip install -r requirements.txt
+jupyter notebook PRCP_1010_InsClaimPred.ipynb
+```
+Then run all cells from top to bottom.
+
+### Option B — Python file
 ```bash
 pip install -r requirements.txt
 python ins_claim_pred.py
 ```
 
 Optional:
-- To use the full dataset, open `ins_claim_pred.py` and set:
+- To use the full dataset, open the notebook/file and set:
   ```python
   SAMPLE_SIZE = None
   ```
