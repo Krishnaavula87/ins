@@ -1,0 +1,6 @@
+*.zip
+data/
+__pycache__/
+*.pyc
+.DS_Store
+model_comparison_results.csv
